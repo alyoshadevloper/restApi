@@ -36,7 +36,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 
 
-app.use(rIndex)
+app.use('/api/movies' , rIndex)
 
 app.listen(3000, () => {
     console.log('server 3000 port running')
